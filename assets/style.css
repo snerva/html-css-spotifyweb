@@ -30,8 +30,8 @@
     height: calc(100vh - 90px);
 }
 .sidebar{
-    width: calc((100% / 12)* 2)
-    background-color: var(var(--sp--bkg-sidebar))
+    width: calc((100% / 12)* 2);
+    background-color: var(--sp-bkg-sidebar);
 }
 .area_content{
     width: calc((100% / 12)* 10);
