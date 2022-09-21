@@ -95,8 +95,9 @@ li{
     border-bottom: 1px solid var(--sp-text-sidebar);
 }
 .install img{
-    height: 13px;
+    height: 1rem;
     color: var(--sp-text-sidebar);
+    vertical-align: middle;
 }
 .account img{
     height: 2rem;
@@ -158,5 +159,8 @@ li{
    }
    .playlist{
     display: none;
+   }
+   .install{
+    border-style: none;
    }
 }
