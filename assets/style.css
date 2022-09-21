@@ -69,6 +69,7 @@ li{
     height: 1.5rem;
     margin-bottom: 0.5rem;
     vertical-align: middle;
+    color: var(--sp-text-sidebar);
 }
 
 .playlist h3{
@@ -87,6 +88,26 @@ li{
 }
 .playlist li{
     line-height: 2rem;
+}
+.install{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--sp-text-sidebar);
+}
+.install img{
+    height: 13px;
+    color: var(--sp-text-sidebar);
+}
+.account img{
+    height: 2rem;
+    background-color: var(--sp-bkg-user);
+    border-radius: 50px;
+    vertical-align: middle;
+}
+.account span{
+    color: var(--sp-text-primary);
+    font-size: larger;
+    padding-left: 0.5rem;
 }
 /*sidebar*/
 
