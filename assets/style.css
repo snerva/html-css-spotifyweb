@@ -17,10 +17,18 @@
     --sp-selection: #ADFF2F;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container{
     width: 100%;
     height: 100vh;
     margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
 }
 
 .d-flex{
@@ -30,6 +38,7 @@
 /*region area top*/
 .area_top{
     height: calc(100vh - 90px);
+    flex-wrap: nowrap;
 }
 
 
@@ -39,6 +48,13 @@
     justify-content: space-between;
     background-color: var(--sp-bkg-sidebar);
     color: var(--sp-text-sidebar);
+    padding: 1rem 1rem 0.5rem;
+}
+.logo img{
+    height: 3rem;
+}
+.small_logo{
+    display: none;
 }
 /*sidebar*/
 
@@ -68,3 +84,20 @@
     color: var(--sp-home-soundbar);
 }
 /*endregion area bottom*/
+
+@media screen and (max-width:878px) {
+    
+}
+
+@media screen and (max-width:639px) {
+    
+}
+
+@media screen and (max-width:552px) {
+   .small_logo{
+    display: flex;
+   }
+   .large_logo{
+    display: none;
+   } 
+}
