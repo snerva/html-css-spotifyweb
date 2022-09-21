@@ -4,3 +4,14 @@
     box-sizing: border-box;
 }
 
+:root{
+    --sp--bkg-sidebar: #000000;
+    --sp-bkg-primary: #141922;
+    --sp-bkg-bottom: #282828;
+    --sp-text-secondary: #787A7F;
+    --sp-bkg-user: #808080;
+    --sp-bkg-add: #A3A3A3;
+    --sp-home-soundbar: #D2D2D2;
+    --sp-text-primary: #FFFFFF;
+    --sp-selection: #ADFF2F;
+}
