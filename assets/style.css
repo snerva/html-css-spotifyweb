@@ -164,6 +164,21 @@ li{
     cursor: pointer;
     transform: scale(1.2);
 }
+
+.contents_menu ul{
+    justify-content: center;
+    padding: 1rem;
+}
+.contents_menu li{
+    padding: 0 0.5rem;
+}
+.contents_menu li:first-child{
+    border-bottom: 2px solid var(--sp-selection);
+}
+.contents_menu li:hover{
+    color: var(--sp-text-primary);
+    cursor: pointer;
+}
 /*area content*/
 /*endregion area top*/
 
