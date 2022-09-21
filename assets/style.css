@@ -19,6 +19,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
 }
 
 .container{
@@ -29,6 +30,10 @@ body{
 
 img{
     max-width: 100%;
+}
+
+li{
+    list-style: none;
 }
 
 .d-flex{
@@ -55,6 +60,33 @@ img{
 }
 .small_logo{
     display: none;
+}
+
+.menu{
+    padding: 1rem 0;
+}
+.menu img{
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+    vertical-align: middle;
+}
+
+.playlist h3{
+    color: var(--sp-text-primary);
+    margin-bottom: 1rem;
+}
+.playlist #add_grey{
+    font-size: xx-large;
+    background-color: var(--sp-bkg-add);
+    color: var(--sp-bkg-sidebar);
+    padding: 0 0.5rem;
+    vertical-align: middle;
+}
+.playlist ul{
+    padding: 1rem 0;
+}
+.playlist li{
+    line-height: 2rem;
 }
 /*sidebar*/
 
@@ -100,4 +132,10 @@ img{
    .large_logo{
     display: none;
    } 
+   .small_none{
+    display: none;
+   }
+   .playlist{
+    display: none;
+   }
 }
