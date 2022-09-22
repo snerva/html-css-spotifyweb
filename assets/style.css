@@ -189,6 +189,9 @@ hr{
     color: var(--sp-text-primary);
     
 }
+.album .photo{
+    display: inline-block;
+}
 .album p{
     margin: 0.5rem 0;
 }
