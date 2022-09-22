@@ -231,12 +231,14 @@ hr{
     height: 90px;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--sp-bkg-bottom);
-    color: var(--sp-home-soundbar);
+    color: var(--sp-text-sidebar);
 }
 .area_bottom .left,
 .area_bottom .right{
     flex-grow: 1;
+    align-items: center;
 }
 .area_bottom .right{
     text-align: right;
@@ -245,6 +247,37 @@ hr{
     flex-grow: 3;
     text-align: center;
 }
+.player_left{
+    margin: 0 0.5rem;
+}
+.player_left img{
+    height: 42px;
+}
+.song_name p:first-child,
+.center_bottom p{
+    color: var(--sp-text-primary);
+    font-weight: bold;
+}
+.song_name p:last-child{
+    font-size: smaller;
+}
+.icons_left{
+    margin-left: 2.5rem;
+}
+.icons_left .fa-regular{
+    font-size: 1rem;
+    margin: 6px;
+}
+.center_top i{
+    color: var(--sp-text-primary);
+    font-size: 1rem;
+    margin: 0.5rem;
+    vertical-align: middle;
+}
+.center_top .fa-regular{
+    font-size: 2rem;
+}
+
 /*endregion area bottom*/
 
 @media screen and (max-width:878px) {
