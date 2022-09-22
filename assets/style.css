@@ -167,10 +167,10 @@ li{
 
 .contents_menu ul{
     justify-content: center;
-    padding: 1rem;
+    
 }
 .contents_menu li{
-    padding: 0 0.5rem;
+    padding: 1rem 0.5rem;
     text-align: -webkit-center;
 }
 hr{
@@ -182,6 +182,7 @@ hr{
     color: var(--sp-text-primary);
     cursor: pointer;
 }
+
 /*area content*/
 /*endregion area top*/
 
@@ -196,11 +197,15 @@ hr{
 /*endregion area bottom*/
 
 @media screen and (max-width:878px) {
-    
+  .contents_menu .d-flex{
+    flex-wrap: wrap;
+  }  
 }
 
 @media screen and (max-width:639px) {
-    
+    .contents_menu .d-flex{
+        flex-wrap: wrap;
+      }  
 }
 
 @media screen and (max-width:552px) {
@@ -219,4 +224,7 @@ hr{
    .install{
     border-style: none;
    }
+   .contents_menu .d-flex{
+    flex-wrap: wrap;
+  }  
 }
