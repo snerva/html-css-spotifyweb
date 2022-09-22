@@ -234,6 +234,7 @@ hr{
     align-items: center;
     background-color: var(--sp-bkg-bottom);
     color: var(--sp-text-sidebar);
+    padding: 0.5rem;
 }
 .area_bottom .left,
 .area_bottom .right{
@@ -241,14 +242,12 @@ hr{
     align-items: center;
 }
 .area_bottom .right{
-    text-align: right;
+    justify-content: end;
+    align-items: center;
 }
 .area_bottom .center{
     flex-grow: 3;
     text-align: center;
-}
-.player_left{
-    margin: 0 0.5rem;
 }
 .player_left img{
     height: 42px;
@@ -269,15 +268,41 @@ hr{
     margin: 6px;
 }
 .center_top i{
+    vertical-align: middle;
+}
+.center_top i,
+.icons_right i{
     color: var(--sp-text-primary);
     font-size: 1rem;
     margin: 0.5rem;
-    vertical-align: middle;
 }
 .center_top .fa-regular{
     font-size: 2rem;
 }
-
+.center_bottom{
+    align-items: center;
+    justify-content: center;
+}
+.center_bottom p{
+    margin: 0 1.5rem;
+}
+.progressbar{
+    width: 427px;
+}
+.progressbar,
+.soundbar{
+    height: 3px;
+    border-radius: 20px;
+    background-color: var(--sp-text-sidebar);
+}
+.color_section{
+    width: 20%;
+    height: 100%;
+    background-color: var(--sp-home-soundbar);
+}
+.soundbar{
+    width: 118px;
+}
 /*endregion area bottom*/
 
 @media screen and (max-width:878px) {
