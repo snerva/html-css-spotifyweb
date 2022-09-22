@@ -171,9 +171,12 @@ li{
 }
 .contents_menu li{
     padding: 0 0.5rem;
+    text-align: -webkit-center;
 }
-.contents_menu li:first-child{
-    border-bottom: 2px solid var(--sp-selection);
+hr{
+    width: 35%;
+    border: 2px solid var(--sp-selection);
+    margin-top: 0.25rem;
 }
 .contents_menu li:hover{
     color: var(--sp-text-primary);
