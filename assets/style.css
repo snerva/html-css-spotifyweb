@@ -49,6 +49,7 @@ li{
 
 .sidebar{
     width: calc((100% / 12)* 2);
+    min-width: 230px;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--sp-bkg-sidebar);
@@ -139,7 +140,7 @@ li{
     justify-content: flex-end;
 }
 .button_upgrade{
-    margin: 2.25rem;
+    margin: 2.25rem 1rem;
 }
 .button_upgrade a{
     text-decoration: none;
@@ -163,7 +164,7 @@ li{
     
 }
 .contents_menu li{
-    padding: 0 0.5rem 1rem;
+    padding: 0 10px 16px;
     text-align: -webkit-center;
 }
 hr{
@@ -242,6 +243,7 @@ hr{
     align-items: center;
 }
 .area_bottom .right{
+    flex-wrap: nowrap;
     justify-content: end;
     align-items: center;
 }
@@ -260,8 +262,8 @@ hr{
 .song_name p:last-child{
     font-size: smaller;
 }
-.icons_left{
-    margin-left: 2.5rem;
+.song_name{
+    margin-left: 0.5rem;
 }
 .icons_left .fa-regular{
     font-size: 1rem;
@@ -273,11 +275,12 @@ hr{
 .center_top i,
 .icons_right i{
     color: var(--sp-text-primary);
-    font-size: 1rem;
-    margin: 0.5rem;
+    font-size: 15px;
+    margin: 6px;
 }
 .center_top .fa-regular{
     font-size: 2rem;
+    margin: 6px 22px;
 }
 .center_bottom{
     align-items: center;
@@ -316,6 +319,15 @@ hr{
   .overlay{
     display: none;
   }
+  .song_name{
+    margin-right: 2rem;
+  }
+  .center_bottom p{
+    margin: 0 1rem;
+  }
+  .progressbar{
+    width: 246px;
+  }
 }
 
 @media screen and (max-width:639px) {
@@ -332,9 +344,25 @@ hr{
   .overlay_s{
     display: flex;
   }
+  .song_name{
+    margin-right: 1.75rem;
+  }
+  .center_bottom p{
+    margin: 0 0.5rem;
+  }
+  .progressbar{
+    width: 145px;
+  }
+  .soundbar{
+    width: 104px;
+  }
 }
 
 @media screen and (max-width:552px) {
+   .sidebar{
+    min-width: 50px;
+    align-items: center;
+   }
    .small_logo{
     display: flex;
    }
@@ -343,6 +371,12 @@ hr{
    } 
    .small_none{
     display: none;
+   }
+   .menu{
+    text-align: center;
+   }
+   .border_green{
+    border-style: none;
    }
    .playlist{
     display: none;
@@ -359,5 +393,17 @@ hr{
   }
   .overlay{
     display: none;
+  }
+  .song_name{
+    margin-right: 1rem;
+  }
+  .player_left img{
+    object-fit: scale-down;
+  }
+  .progressbar{
+    width: 128px;
+  }
+  .soundbar{
+    width: 85px;
   }
 }
