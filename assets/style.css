@@ -76,11 +76,6 @@ li{
     margin-left: -1rem;
     border-left: 2px solid var(--sp-selection);
 }
-
-.menu li:hover{
-    color: var(--sp-text-primary);
-    cursor: pointer;
-}
 .playlist h3{
     color: var(--sp-text-primary);
     margin-bottom: 1rem;
@@ -98,18 +93,6 @@ li{
 .playlist li{
     line-height: 2rem;
 }
-.add_playlist:hover{
-    color: var(--sp-text-primary);
-    cursor: pointer;
-}
-#add_grey:hover{
-    background-color: var(--sp-text-primary);
-    cursor: pointer;
-}
-.playlist li:hover{
-    color: var(--sp-text-primary);
-    cursor: pointer;
-}
 .install{
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -119,10 +102,6 @@ li{
     height: 1rem;
     color: var(--sp-text-sidebar);
     vertical-align: middle;
-}
-.install:hover{
-    color: var(--sp-text-primary);
-    cursor: pointer;
 }
 .account img{
     height: 2rem;
@@ -134,6 +113,15 @@ li{
     color: var(--sp-text-primary);
     font-size: larger;
     padding-left: 0.5rem;
+}
+
+.menu li:hover,
+.add_playlist:hover,
+#add_grey:hover,
+.playlist li:hover,
+.install:hover{
+    color: var(--sp-text-primary);
+    cursor: pointer;
 }
 /*sidebar*/
 
@@ -165,12 +153,15 @@ li{
     transform: scale(1.2);
 }
 
+.contents{
+    padding: 1rem;
+}
 .contents_menu ul{
     justify-content: center;
     
 }
 .contents_menu li{
-    padding: 1rem 0.5rem;
+    padding: 0 0.5rem 1rem;
     text-align: -webkit-center;
 }
 hr{
@@ -182,7 +173,28 @@ hr{
     color: var(--sp-text-primary);
     cursor: pointer;
 }
-
+.contents_albums{
+    margin: 1rem 0;
+}
+.albums{
+    gap: 1rem;
+    margin: 1.75rem 0;
+}
+.album{
+    width: calc(100% / 6 - 1rem);
+    text-align: center;
+}
+.contents_albums h2,
+.contents_albums h3{
+    color: var(--sp-text-primary);
+    
+}
+.album p{
+    margin: 0.5rem 0;
+}
+.album img{
+    margin-bottom: 1rem;
+}
 /*area content*/
 /*endregion area top*/
 
