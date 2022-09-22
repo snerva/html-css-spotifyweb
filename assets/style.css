@@ -205,6 +205,9 @@ hr{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
 }
+.overlay_s{
+    display: none;
+}
 .album .fa-regular{
     font-size: 3.75rem;
 }
@@ -231,6 +234,17 @@ hr{
     background-color: var(--sp-bkg-bottom);
     color: var(--sp-home-soundbar);
 }
+.area_bottom .left,
+.area_bottom .right{
+    flex-grow: 1;
+}
+.area_bottom .right{
+    text-align: right;
+}
+.area_bottom .center{
+    flex-grow: 3;
+    text-align: center;
+}
 /*endregion area bottom*/
 
 @media screen and (max-width:878px) {
@@ -241,6 +255,9 @@ hr{
   .album{
     width: calc(100% / 4 - 1rem);
   } 
+  .overlay{
+    display: none;
+  }
 }
 
 @media screen and (max-width:639px) {
@@ -250,6 +267,12 @@ hr{
   }  
   .album{
     width: calc(100% / 2 - 1rem);
+  }
+  .overlay_lg{
+    display: none;
+  }
+  .overlay_s{
+    display: flex;
   }
 }
 
@@ -275,5 +298,8 @@ hr{
   }  
   .album{
     width: calc(100% / 2 - 1rem);
+  }
+  .overlay{
+    display: none;
   }
 }
