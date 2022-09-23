@@ -258,7 +258,7 @@ hr{
     text-align: center;
 }
 .player_left img{
-    height: 42px;
+    width: 42px;
 }
 .song_name p:first-child,
 .center_bottom p{
@@ -352,6 +352,9 @@ hr{
   .album{
     width: calc(100% / 4 - 1rem);
   } 
+  .s_m_none{
+    display: none;
+  }
   .song_name{
     margin-right: 2rem;
   }
@@ -370,6 +373,10 @@ hr{
   }  
   .album{
     width: calc(100% / 2 - 1rem);
+  }
+  .s_none,
+  .s_m_none{
+    display: none;
   }
   .song_name{
     margin-right: 1.75rem;
@@ -393,21 +400,18 @@ hr{
    .small_logo{
     display: flex;
    }
-   .large_logo{
+   .large_logo,
+   .small_none,
+   .playlist,
+   .fa-folder,
+   .fa-list-ul,
+   .fa-display{
     display: none;
    } 
-   .small_none{
-    display: none;
-   }
    .menu{
     text-align: center;
    }
-   .border_green{
-    border-style: none;
-   }
-   .playlist{
-    display: none;
-   }
+   .border_green,
    .install{
     border-style: none;
    }
@@ -418,6 +422,9 @@ hr{
   .album{
     width: calc(100% / 2 - 1rem);
   }
+  .s_none,
+  .s_m_none{
+    display: none;
   .song_name{
     margin-right: 1rem;
   }
