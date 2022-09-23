@@ -205,8 +205,12 @@ hr{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
 }
-.overlay_s{
+.overlay{
     display: none;
+}
+.photo:hover .overlay{
+    display: flex;
+    cursor: pointer;
 }
 .album .fa-regular{
     font-size: 3.75rem;
@@ -221,6 +225,9 @@ hr{
 .round img{
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
+}
+.round .overlay{
     border-radius: 50%;
 }
 /*endregion area content*/
@@ -331,9 +338,6 @@ hr{
   .album{
     width: calc(100% / 4 - 1rem);
   } 
-  .overlay{
-    display: none;
-  }
   .song_name{
     margin-right: 2rem;
   }
@@ -352,12 +356,6 @@ hr{
   }  
   .album{
     width: calc(100% / 2 - 1rem);
-  }
-  .overlay_lg{
-    display: none;
-  }
-  .overlay_s{
-    display: flex;
   }
   .song_name{
     margin-right: 1.75rem;
@@ -405,9 +403,6 @@ hr{
   }  
   .album{
     width: calc(100% / 2 - 1rem);
-  }
-  .overlay{
-    display: none;
   }
   .song_name{
     margin-right: 1rem;
