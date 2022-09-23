@@ -273,13 +273,17 @@ hr{
 }
 .center_top i,
 .icons_right i{
-    color: var(--sp-text-primary);
     font-size: 15px;
     margin: 6px;
 }
 .center_top .fa-regular{
+    color: var(--sp-text-primary);
     font-size: 2rem;
     margin: 6px 22px;
+}
+.center_top .fa-regular:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 .center_bottom{
     align-items: center;
@@ -302,9 +306,21 @@ hr{
     height: 100%;
     background-color: var(--sp-home-soundbar);
 }
+.color_section:hover{
+    background-color: var(--sp-selection);
+    cursor: pointer;
+}
 .soundbar{
     width: 118px;
 }
+.song_name:hover,
+.icons_left:hover,
+.icons_right:hover,
+.center_top .fa-solid:hover{
+    color: var(--sp-text-primary);
+    cursor: pointer;
+}
+
 /*#endregion area bottom*/
 /*#region responsive*/
 @media screen and (max-width:878px) {
