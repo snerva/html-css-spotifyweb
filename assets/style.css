@@ -40,13 +40,12 @@ li{
     display: flex;
 }
 
-/*region area top*/
+/*#region area top*/
 .area_top{
     height: calc(100vh - 90px);
     flex-wrap: nowrap;
 }
-
-
+/*#region sidebar*/
 .sidebar{
     width: calc((100% / 12)* 2);
     min-width: 230px;
@@ -55,6 +54,7 @@ li{
     background-color: var(--sp-bkg-sidebar);
     color: var(--sp-text-sidebar);
     padding: 1rem 1rem 0.5rem;
+    overflow: hidden;
 }
 .logo img{
     height: 3rem;
@@ -124,14 +124,15 @@ li{
     color: var(--sp-text-primary);
     cursor: pointer;
 }
-/*sidebar*/
+/*#endregion sidebar*/
 
-
+/*#region area content*/
 .area_content{
     width: calc((100% / 12)* 10);
     background-color: var(--sp-bkg-primary);
     color: var(--sp-text-secondary);
 }
+/* upgrade */
 .upgrade{
     position: sticky;
     top: 0;
@@ -153,15 +154,14 @@ li{
     cursor: pointer;
     transform: scale(1.2);
 }
-
+/* contents */
 .contents{
     padding: 1rem;
     overflow-y: auto;
     height: calc(100% - 90px);
 }
 .contents_menu ul{
-    justify-content: center;
-    
+    justify-content: center; 
 }
 .contents_menu li{
     padding: 0 10px 16px;
@@ -191,7 +191,6 @@ hr{
 .contents_albums h3,
 .album .fa-regular{
     color: var(--sp-text-primary);
-    
 }
 .album .photo{
     display: inline-block;
@@ -224,7 +223,7 @@ hr{
     object-fit: cover;
     border-radius: 50%;
 }
-/*area content*/
+/*endregion area content*/
 /*endregion area top*/
 
 /*region area bottom*/
@@ -306,8 +305,8 @@ hr{
 .soundbar{
     width: 118px;
 }
-/*endregion area bottom*/
-
+/*#endregion area bottom*/
+/*#region responsive*/
 @media screen and (max-width:878px) {
   .contents_menu .d-flex,
   .contents_albums .d-flex{
@@ -407,3 +406,4 @@ hr{
     width: 85px;
   }
 }
+/*#endregion responsive*/
