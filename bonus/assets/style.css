@@ -304,6 +304,8 @@ hr{
 }
 .progressbar,
 .soundbar{
+    flex-wrap: nowrap;
+    align-items: center;
     height: 3px;
     border-radius: 20px;
     background-color: var(--sp-text-sidebar);
@@ -313,7 +315,19 @@ hr{
     height: 100%;
     background-color: var(--sp-home-soundbar);
 }
-.color_section:hover{
+.shot{
+    width: 12px;
+    height: 12px;
+    background-color: var(--sp-text-primary);
+    border-radius: 50%;
+    display: none;
+}
+.soundbar:hover .shot,
+.progressbar:hover .shot{
+    display: flex;
+}
+.soundbar:hover .color_section,
+.progressbar:hover .color_section{
     background-color: var(--sp-selection);
     cursor: pointer;
 }
