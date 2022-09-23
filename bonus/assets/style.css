@@ -161,7 +161,7 @@ li{
 .contents{
     padding: 1rem;
     overflow-y: auto;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 178px);
 }
 .contents_menu ul{
     justify-content: center; 
@@ -517,8 +517,11 @@ hr{
         display: none;
     }
     .area_top,
-    .area_contents{
+    .area_content{
         height: calc(100vh - 48px);
+    }
+    .contents{
+        height: calc(100vh - 90px);
     }
     .area_bottom{
         height: 48px;
