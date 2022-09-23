@@ -425,6 +425,7 @@ hr{
   .s_none,
   .s_m_none{
     display: none;
+  }
   .song_name{
     margin-right: 1rem;
   }
