@@ -127,6 +127,9 @@ li{
 /*#endregion sidebar*/
 
 /*#region area content*/
+.mobile{
+    display: none;
+}
 .area_content{
     width: calc((100% / 12)* 10);
     background-color: var(--sp-bkg-primary);
@@ -158,7 +161,7 @@ li{
 .contents{
     padding: 1rem;
     overflow-y: auto;
-    height: calc(100% - 90px);
+    height: calc(100vh - 90px);
 }
 .contents_menu ul{
     justify-content: center; 
@@ -176,6 +179,27 @@ hr{
     color: var(--sp-text-primary);
     cursor: pointer;
 }
+.contents_mobile{
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.icons_mobile i{
+    padding: 0 0.5rem;
+}
+.prefered_mobile{
+    margin: 1rem 0;
+}
+.album_mobile{
+    width: calc(100% / 2 - 1rem);
+    align-items: center;
+    gap: 1rem;
+}
+.photo_mb img{
+    height: 69px;
+}
+.photo_mb_text h4{
+    padding: 0 0.5rem;
+}
 .contents_albums{
     margin: 1.5rem 0;
 }
@@ -189,7 +213,10 @@ hr{
 }
 .contents_albums h2,
 .contents_albums h3,
-.album .fa-regular{
+.album .fa-regular,
+.contents_mobile h2,
+.icons_mobile,
+.photo_mb_text h4{
     color: var(--sp-text-primary);
 }
 .album .photo{
@@ -230,6 +257,27 @@ hr{
 .round .overlay{
     border-radius: 50%;
 }
+/*player mobile*/
+.song_left img{
+    height: 21px;
+}
+.player_mobile{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    margin: 0 0.5rem;
+    background-color: rgba(248, 32, 140, 0.3);
+}
+.song_left{
+    align-items: center;
+}
+.song_text{
+    color: var(--sp-text-primary);
+    margin-left: 1rem;
+}
+.song_text:last-child{
+    font-size: smaller;
+}
 /*endregion area content*/
 /*endregion area top*/
 
@@ -243,6 +291,25 @@ hr{
     color: var(--sp-text-sidebar);
     padding: 0.5rem;
 }
+.menu_mobile p{
+    font-size: smaller;
+}
+.mobile_bottom img{
+    height: 21px;
+}
+.menu_mobile img,
+.menu_mobile p,
+.song_right i{
+    color: var(--sp-text-primary);
+}
+.menu_mobile{
+    text-align: center;
+    justify-content: center;
+}
+.menu_mobile li{
+    margin: 0 1rem;
+}
+
 .area_bottom .left,
 .area_bottom .right{
     flex-grow: 1;
@@ -438,5 +505,43 @@ hr{
   .soundbar{
     width: 85px;
   }
+}
+
+@media screen and (max-width:375px) {
+    .sidebar,
+    .upgrade,
+    .contents_menu,
+    .area_bottom .left,
+    .area_bottom .center,
+    .area_bottom .right{
+        display: none;
+    }
+    .area_top,
+    .area_contents{
+        height: calc(100vh - 48px);
+    }
+    .area_bottom{
+        height: 48px;
+    }
+    .mobile{
+        display: block;
+    }
+    .player_mobile{
+        display: flex;
+    }
+    .area_content{
+        width: 100%;
+    }
+    .contents_albums .d-flex{
+        flex-wrap: wrap;
+    }    
+    .album{
+        width: calc(100% / 2 - 1rem);
+    }
+    .area_bottom{
+        display: block;
+    }
+
+
 }
 /*#endregion responsive*/
